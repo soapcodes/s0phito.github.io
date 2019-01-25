@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<head>
 <!--
 
 ==============================================
@@ -20,6 +20,36 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css">
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
 <style>
 
 div#qTip {
@@ -164,10 +194,10 @@ h1 {
     font-size: 7px;
     line-height: 8px;
     text-shadow: 0 0;
-    color: #FFD1EF;
+    color: #FEAAE0;
     letter-spacing: 2px;
-    border: 1px solid #FFD1EF;
-    border-left: 7px solid #FFD1EF;
+    border: 1px solid #FEAAE0;
+    border-left: 7px solid #FEAAE0;
 }
 
 #sidebar nav a:hover {
@@ -359,8 +389,8 @@ p::-moz-selection {
 Based in AB, Canada, Sophia is an aspiring software engineer currently studying computer science at UofC. With an eagerness to learn new things and a love for collaborating with others, she hopes to pursue a career that will constantly challenge her with innovative and interesting projects.
 </div></div>
 <nav>
-<a href="Link One URL">Link One</a>
-<a href="Link Two URL">Link Two</a>
+<a href="#sec1">Link One</a>
+<a href="#sec2">Link Two</a>
 <a href="Link Three URL">Link Three</a>
 <a href="Link Four URL">Link Four</a>
 <a href="Link Five URL">Link Five</a>
@@ -392,7 +422,7 @@ Based in AB, Canada, Sophia is an aspiring software engineer currently studying 
 <div id="entries">
 <div id="entries-scroll">
 
-<div class="post">
+<div class="post" id="sec1">
 
            
 
@@ -426,13 +456,13 @@ Based in AB, Canada, Sophia is an aspiring software engineer currently studying 
 
 <a href="http://pohroro.com" title="4 minutes ago">■</a>
 <a href="http://pohroro.com" title="5,692 notes">■</a>
-<a href="" title="#jimin ">■</a>
+<a href="" title="#jimin">■</a>
 </div>
 
 </div>
 
 
-<div class="post">
+<div class="post" id="sec2">
 
 <h1>AN EXAMPLE POST</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer <a href="http://vitaemine.tumblr.com/">adipiscing elit</a>. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.<br></p><ul><li>Lorem ipsum dolor sit amet.</li><li>Consectetuer adipiscing elit.</li><li>Nam at tortor quis ipsum tempor aliquet.</li></ul><p>Cum sociis <a href="http://vitaemine.tumblr.com/">natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.</p><blockquote><p>Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.</p></blockquote><p>Suspendisse ac pede. Cras <a href="http://vitaemine.tumblr.com/">tincidunt pretium</a> felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.</p>
@@ -467,9 +497,6 @@ Based in AB, Canada, Sophia is an aspiring software engineer currently studying 
 </div>
 
 </div></div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
 
     
 </body>
