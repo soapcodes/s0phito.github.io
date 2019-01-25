@@ -1,36 +1,370 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Frameset Example Title (Replace this section with your own title)</title>
-</head>
+
 <!--
-======================================================================================================
-This template is available for free download from the Quackit website.
 
-If you have found it to be useful, please consider linking from your website to http://www.quackit.com
+==============================================
 
-Thanks!
-======================================================================================================
 
-Note the following:
-1. Each frame has it's own 'frame' tag.
-2. Each frame has a name (eg, name="menu"). This is used for when you need to load one frame from another. For example, your left frame might have links that, when clicked on, loads a new page in the right frame. This is acheived by using 'target="content"' within your links/anchor tags.
-3. Each 'frame' tag has a 'src' attribute. This is where you specify the name of the file to be loaded into that frame when the page first loads.
-4. You can change the size of the frames by changing the value of the 'cols' and/or 'rows' attribute. A value of "200" sets the frame at 200 pixels. An asterisk (*) specifies that the frame should use up whatever space is left over from the other frames. You can also use percentage values if desired (i.e. 20%,80%)
-5. To specify a border, set 'frameborder' and 'border' to "1". I included both attributes for maximum browser compatibility.
-6. The 'framespacing' attribute doesn't work in all browsers, but you can set any numeric value you like here.
-7. To learn more about HTML frames, check out: http://www.quackit.com/html/tutorial/html_frames.cfm
+           「  CODES BY POHRORO  」
+                 @ pohroro.com
+                Theme ▸ Arcadia
+          v1.3.0 | Updated: 10/07/18
+
+                      +
+
+          PXU Photoset, Video Resize: 
+             shythemes.tumblr.com
+            
+            Modified PXU Photoset:
+           bychloethemes.tumblr.com
+
+
+============================================== 
+
 -->
 
-<frameset rows="100,*" frameborder="0" border="0" framespacing="0">
-  <frame name="topNav" src="top_nav.html">
-<frameset cols="200,*" frameborder="0" border="0" framespacing="0">
-	<frame name="menu" src="menu_1.html" marginheight="0" marginwidth="0" scrolling="auto" noresize>
-	<frame name="content" src="content.html" marginheight="0" marginwidth="0" scrolling="auto" noresize>
+<title>sophia le.</title>
+<link rel="shortcut icon" href="https://orig00.deviantart.net/8535/f/2010/018/c/8/strawberry_icon_free_use_by_steffne.gif">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<noframes>
-<p>This section (everything between the 'noframes' tags) will only be displayed if the users' browser doesn't support frames. You can provide a link to a non-frames version of the website here. Feel free to use HTML tags within this section.</p>
-</noframes>
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:300,300i,400,400i,700,700i|Inconsolata:100,300,400,400i,700,700i" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://static.tumblr.com/yzs4yqx/3O6p0jbhf/base.css" rel="stylesheet">
+<link href="https://static.tumblr.com/yzs4yqx/OXRokx2wl/pxu-photoset.css" rel="stylesheet">
 
-</frameset>
-</frameset>
+<meta name="image:Background" content="http://www.transparenttextures.com/patterns/lined-paper-2.png">
+<meta name="image:Avatar" content="http://static.tumblr.com/046acab0d5e360872588b532fce79d31/yzs4yqx/xI9o6raep/tumblr_static_9w4ty95vhnkg8g84go4048888.png">
+<meta name="image:Entries Background" content="">
+<meta name="image:Sidebar" content="http://static.tumblr.com/37ac60f5c6009eaf3061912fbbbb7300/yzs4yqx/HZno6ra68/tumblr_static_d1eh7viaq74kkggsgkwco848g.png">
+
+<style>
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; } 
+    100% { opacity: 1; }
+}
+ 
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+div#qTip {
+    font: 8px/10px Inconsolata;
+    color: PURPLE;
+    background: BLUE;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+    max-width: 350px;
+    position: absolute;
+    text-align: justify;
+    z-index: 999999999999999999;
+    padding: 3px 4px 2px 4px;
+    margin: -5px 0 0 20px;
+    letter-spacing: 1px;
+}
+
+.tmblr-iframe {
+    white-space: nowrap;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+    
+body {
+    font-family: Inconsolata;
+    color: #e15a60;
+    font-size: #e15a60;
+    line-height: calc(1.5em + (12 / 2));
+    background url("http://www.transparenttextures.com/patterns/lined-paper-2.png") fixed;
+    -webkit-animation: fadein 0.8s;
+    animation: fadein 0.8s;
+}
+
+a {
+    color: #e15a60};
+}
+
+a:hover {
+    color: BLACK;
+}
+
+h1 {
+    font: 400 10px/16px Anonymous Pro;
+    text-transform: uppercase;
+    color: #e15a60;
+    background: BLUE;
+    padding: 5px 0 5px 9px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#container {
+    width: calc(450px + 320px);
+    height: 500px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#padding {
+    color: #e15a60;
+    background: #e15a60;
+}
+ 
+#padding a {
+    color: #e15a60;
+}
+
+#sidebar {
+    width: 250px;
+    height: 500px;
+    position: fixed;
+    background: #e15a60;
+    color: #e15a60;
+}
+
+#header {
+    height: 200px;
+    width: 250px;
+    background: url("http://static.tumblr.com/37ac60f5c6009eaf3061912fbbbb7300/yzs4yqx/HZno6ra68/tumblr_static_d1eh7viaq74kkggsgkwco848g.png");
+    background-size: cover;
+}
+
+#title {
+    font: 600 12px/16px Anonymous Pro;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: BLUE;
+    padding: 5px 0 5px 9px;
+    margin: 25px 0 0 25px;
+    width: 190px;
+}
+
+#description {
+    width: 200px;
+    height: 120px;
+    margin: 10px 0 0 25px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+#description-scroll {
+    width: 217px;
+    height: 120px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#avatar img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-left: 7px;
+    border-radius: 100%;
+    z-index: 999;
+}
+
+#sidebar nav {
+    margin: 15px 0 0 25px;
+}
+
+#sidebar nav a {
+    display: inline-block;
+    width: 74px;
+    padding: 5px 6px;
+    margin: 0 10px 10px 0;
+    text-transform: uppercase;
+    font-size: 7px;
+    line-height: 8px;
+    text-shadow: 0 0;
+    color: PURPLE;
+    letter-spacing: 2px;
+    border: 1px solid BLUE;
+    border-left: 7px solid BLUE};
+}
+
+#sidebar nav a:hover {
+    border-color: PURPLE;
+    color: BLUE;
+    text-align: right;
+}
+
+#top-bar {
+    width: calc(450 + 60px);
+    height: 30px;
+    background: PURPLE;
+    position: fixed;
+    z-index: 99999;
+    margin-left: 250px;
+}
+
+#top-bar nav {
+    margin-top: 5px;
+    margin-right: 8px;
+    text-align: right;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+#top-bar nav a {
+    display: inline-block;
+    padding: 0 5px 0 8px;
+    color: RED;
+    border-left: 1px solid GREEN;
+}
+
+#top-bar nav a:first-of-type {
+    border: 0;
+}
+
+#entries {
+    width: calc(450px + 60px);
+    height: 470px;
+    background: url("");
+    margin: 30px 0 0px 250px;
+}
+
+#entries-scroll {
+    width: calc(450px + 77px);
+    height: 470px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.details {
+    height: 60px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.title {
+    font-weight: bold;
+    color: BLUE;
+}
+
+.artist {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.permalink {
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0;
+    letter-spacing: 1px;
+}
+
+.permalink a {
+    color: RED;
+}
+
+ol.notes {
+    padding: 0;
+    margin: 20px 0px;
+    list-style-type: none;
+}
+ 
+ol.notes li.note {
+    margin-bottom: 10px;
+}
+ 
+ol.notes li.note img.avatar {
+    border-radius: 100%;
+    vertical-align: -4px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+   
+<div id="sidebar">
+<div id="header"></div>
+<div id="title">Title</div>
+<div id="description">
+<div id="description-scroll">
+<div id="avatar"><img src="https://orig00.deviantart.net/23b7/f/2016/115/a/9/89e31a1a09ffcf492c0795991ca00929_by_darknesshcr-da0796o.gif"></div>
+this is a description lol
+</div></div>
+<nav>
+{<a href="https://s0phito.github.io/">{text:Link One}</a>
+<a href="https://s0phito.github.io/">{text:Link Two}</a>
+<a href="https://s0phito.github.io/">{text:Link Three}</a>
+{<a href="https://s0phito.github.io/">{text:Link Four}</a>
+<a href="https://s0phito.github.io/">{text:Link Five}</a>
+<a href="https://s0phito.github.io/">{text:Link Six}</a>
+</nav>
+</div>
+
+<div id="top-bar">
+
+<nav>
+<a href="https://s0phito.github.io/" title="Index"><i class="fa fa-home" aria-hidden="true"></i></a>
+<a href="https://s0phito.github.io/" title="Message"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+<a href="https://s0phito.github.io/" title="Archive"><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+<a href="https://s0phito.github.io/" title="Dashboard"><i class="fa fa-reply" aria-hidden="true"></i></a>
+</nav>
+</div>
+
+<div id="entries">
+<div id="padding"></div>
+<div id="entries-scroll">
+
+<!-- 
+
+POSTS HERE 
+
+-->
+
+</div></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+<script src="https://static.tumblr.com/yzs4yqx/lOsokx99u/smoothscroll.min.js"></script>
+<script src="https://static.tumblr.com/fwgzvyf/Oj1o08f6h/shythemes.vr.js"></script>
+<script src="https://static.tumblr.com/yxfeliq/hHwojmt8m/bctphotoset.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        $('.photo-slideshow').pxuPhotoset({
+                lightbox: true,
+                rounded: false,
+                gutter: '4px',
+                borderRadius: '0px',
+                photoset: '.photo-slideshow',
+                photoWrap: '.photo-data',
+                photo: '.pxu-photo'
+        });
+});
+</script>
+
+</body>
 </html>
