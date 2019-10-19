@@ -5,7 +5,7 @@ date: 2019-10-18 00:53
 tag:
 - web design
 - course project
-image: /assets/images/pug2.png
+image: /assets/images/shiba2.gif
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
@@ -32,4 +32,5 @@ Designed with
 ---
 
 To view the portfolio, [click here.](https://s0phito.github.io/dogapp-portfolio/)
+
 To view the GitHub page, [click here.](https://github.com/s0phito/dogapp-portfolio)
