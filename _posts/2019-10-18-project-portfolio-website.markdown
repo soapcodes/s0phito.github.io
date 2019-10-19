@@ -32,3 +32,4 @@ Designed with
 ---
 
 To view the portfolio, [click here.](https://s0phito.github.io/dogapp-portfolio/)
+To view the GitHub page, [click here.](https://github.com/s0phito/dogapp-portfolio)
