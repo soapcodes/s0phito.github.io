@@ -22,13 +22,23 @@
     right: 0
     top: 0
     background-color: #FFF
+    border-bottom: 3px solid $alpha
+    z-index: 99
+    text-align: center
 
     > .list
         padding: 0 13px 0
 
         > .item > .link
             font-size: 1.7rem
-            padding: 20px 10px
+            padding: 20px 40px
+            transition: all .4s ease-in-out
+            
+            &:hover
+                color: $alpha
+                background: url("/assets/images/flower2.gif") no-repeat
+                background-position: left
+                background-size: 45 auto
 
 .nav-home
     margin-top: 40px
